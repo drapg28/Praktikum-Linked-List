@@ -148,4 +148,7 @@ void PrintInfo (List L);
 void DelAll (List * L);
 /* Delete semua elemen list dan alamat elemen di dealokasi */
 
+void DelOdd(List *L);
+/*menghapus semua bilangan ganjil*/
+
 #endif

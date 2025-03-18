@@ -164,3 +164,19 @@ void DelAll(List *L) {
         DelVFirst(L, &X);
     }
 }
+
+/* Prosedur untuk menghapus semua bilangan ganjil dari list */
+void DelOdd(List *L) {
+    address P = First(*L);
+    address Temp;
+    while (P != Nil) {
+        if (Info(P) % 2 != 0) { // Jika bilangan ganjil
+            Temp = P;
+            P = Next(P);
+            DelP(L, Info(Temp));
+        } else {
+            P = Next(P);
+        }
+    }
+    PrintInfo(*L);
+}

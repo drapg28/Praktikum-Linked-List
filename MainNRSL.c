@@ -76,9 +76,9 @@ int main() {
     }
     PrintInfo(MyList);
 
-    // 9. Delete All (hapus semua elemen)
-    printf("Menghapus semua elemen dalam list.\n");
-    DelAll(&MyList);
+    // 9. Delete Odd (hapus semua bilangan ganjil)
+    printf("Menghapus semua bilangan ganjil dalam list.\n");
+    void DelOdd(List *L);
     PrintInfo(MyList);
 
     return 0;
