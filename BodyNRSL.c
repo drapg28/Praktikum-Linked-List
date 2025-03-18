@@ -178,5 +178,4 @@ void DelOdd(List *L) {
             P = Next(P);
         }
     }
-    PrintInfo(*L);
 }
